@@ -1,13 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qarzakanm App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <style>
 
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
     .buttons {
       display: flex;
       justify-content: center;
@@ -32,114 +36,565 @@
 
     .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
     .btn i {
       font-size: 20px;
     }
 
-  
-
     .btn.playstore {
       background: #000;
       color: #fff;
     }
-
-    
   </style>
 </head>
+
 <body>
+
   <!-- Header -->
   <header>
     <img src="icon.png" alt="App Logo" class="logo">
+
     <h1>قەرزەکانم</h1>
-    <p>وێبسایتی سەرەکی ئەپڵیکەشنی قەرزەکانم </p>
+
+    <p>
+      وێبسایتی سەرەکی ئەپڵیکەشنی قەرزەکانم
+    </p>
   </header>
 
+
   <!-- Download Section -->
-<section id="download" class="download">
-  <h2>ئێستا ئەپڵیکەیشنەکەمان دابەزێنە</h2>
+  <section id="download" class="download">
 
- <div class="buttons">
-      <!-- Play Store Button -->
-      <a href="https://play.google.com/store/apps/details?id=com.dya.owes" target="_blank" class="btn playstore">
-        <i class="fab fa-google-play"></i> Google Play
+    <h2>
+      ئێستا ئەپڵیکەیشنەکەمان دابەزێنە
+    </h2>
+
+    <div class="buttons">
+
+      <!-- Google Play Button -->
+      <a
+        href="https://play.google.com/store/apps/details?id=com.dya.owes"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn playstore">
+
+        <i class="fab fa-google-play"></i>
+        Google Play
+
       </a>
-    </div>
-  
-</section>
 
+    </div>
+
+  </section>
 
 
   <!-- Privacy Policy -->
-<!-- Privacy Policy -->
-<section id="privacy-policy" class="privacy">
-  <h2>Privacy Policy</h2>
-  <p>
-    Qarzakanm. 
-    We respect your privacy and are committed to protecting it. This Privacy Policy explains what data we collect, how it is used, and your rights.
-  </p>
+  <section id="privacy-policy" class="privacy">
 
-  <h3>1. Information We Collect</h3>
-  <p>
-    - The App primarily works offline and stores your debts and financial records locally on your device.  
-    - If you create an account, we collect your email address and password through Firebase Authentication to enable login and syncing of your subscription status.  
-    - We do not collect sensitive data such as your contacts, location, or files outside the App.
-  </p>
+    <h2>Privacy Policy</h2>
 
-  <h3>2. How We Use Your Data</h3>
-  <p>
-    - Your financial records are saved only on your device and are not uploaded to our servers.  
-    - Your email and authentication details are processed securely by Firebase Authentication (a Google service).  
-    - We do not sell, trade, or share your personal information with third parties, except as necessary to provide the Firebase login service.
-  </p>
+    <p>
+      <strong>Last Updated: August 16, 2026</strong>
+    </p>
 
-  <h3>3. Data Backup</h3>
-  <p>
-    - The App allows you to back up your data locally on your device.  
-    - No automatic cloud backup is performed unless you log in with Firebase Authentication, in which case only your account details (email) are stored in Firebase.
-  </p>
+    <p>
+      Qarzakanm ("قەرزەکانم", "we", "our", or "the App")
+      respects your privacy and is committed to protecting your information.
+    </p>
 
-  <h3>4. Permissions</h3>
-  <p>
-    The App requests the following permissions:  
-    - <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: required only for Firebase Authentication and subscription verification.  
-    No other device permissions are requested.
-  </p>
+    <p>
+      Qarzakanm is a personal loan and debt notebook application
+      that allows users to record and manage their personal loan,
+      debt, payment, and note information.
+    </p>
 
-  <h3>5. Security</h3>
-  <p>
-    We take reasonable steps to protect your information. Since most data is stored offline on your device, you are responsible for securing your phone and backups.
-  </p>
-
-  <h3>6. Children’s Privacy</h3>
-  <p>
-    The App is not directed to children under the age of 13. We do not knowingly collect information from children. If we discover such data has been provided, we will delete it immediately.
-  </p>
-
-  <h3>7. Contact Us</h3>
-  <p>
-    If you have any questions about this Privacy Policy, please contact us:  
-    <br>Email: <a href="mailto:qarzakanm@gmail.com">qarzakanm@gmail.com</a>  
-    <br>Phone: +964 778 196 0559  
-    <br>Website: <a href="https://qarzakanm.github.io/" target="_blank">https://qarzakanm.github.io/</a>
-  </p>
-
-  <h3>8. Changes to This Policy</h3>
-  <p>
-    We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Last Updated" date.  
-    <br><strong>Last Updated: September 2025</strong>
-  </p>
-</section>
+    <p>
+      The App can be used offline without creating an account.
+      Google account sign-in and Google Drive backup are optional features.
+    </p>
 
 
+    <!-- 1 -->
+    <h3>1. Information We Collect</h3>
 
-<footer>
-  <p>© 2025 Qarzakanm. All rights reserved. |
-    <a href="#download">Download App</a> |
-    <a href="#privacy-policy">Privacy Policy</a>
-  </p>
-</footer>
+    <p>
+      Qarzakanm does not require you to create an account to use
+      the main features of the App.
+    </p>
+
+    <p>
+      When you use Qarzakanm offline without signing in,
+      your loan and debt information is stored locally on your device.
+    </p>
+
+    <p>
+      If you voluntarily sign in with Google, Qarzakanm uses
+      Google Sign-In and Firebase Authentication to authenticate
+      your account.
+    </p>
+
+    <p>
+      Information associated with your Google account may be processed
+      by Google and Firebase, including information such as:
+    </p>
+
+    <ul>
+      <li>Email address</li>
+      <li>Display name</li>
+      <li>Google/Firebase user identifier</li>
+      <li>Authentication information required to provide the sign-in service</li>
+    </ul>
+
+    <p>
+      Qarzakanm does not sell this information or use it for advertising.
+    </p>
+
+
+    <!-- 2 -->
+    <h3>2. Loan and Debt Information</h3>
+
+    <p>
+      Qarzakanm allows you to enter and manage information such as:
+    </p>
+
+    <ul>
+      <li>Names</li>
+      <li>Loan and debt amounts</li>
+      <li>Payment information</li>
+      <li>Dates</li>
+      <li>Notes</li>
+      <li>Other information that you choose to enter into the App</li>
+    </ul>
+
+    <p>
+      When using the App offline, this information is stored locally
+      on your device.
+    </p>
+
+    <p>
+      Qarzakanm does not automatically upload this information
+      to Qarzakanm-owned servers.
+    </p>
+
+
+    <!-- 3 -->
+    <h3>3. Google Sign-In and Firebase Authentication</h3>
+
+    <p>
+      Qarzakanm provides optional Google account sign-in using
+      Google Sign-In and Firebase Authentication.
+    </p>
+
+    <p>
+      You can use the App without signing in.
+    </p>
+
+    <p>
+      If you choose to sign in, Google provides authentication
+      information to the App, and Firebase Authentication is used
+      to authenticate and maintain your signed-in session.
+    </p>
+
+    <p>
+      The Google account information is used only to provide
+      authentication and the optional backup and restore functionality.
+    </p>
+
+    <p>
+      Qarzakanm does not use your Google account information
+      for advertising or sell it to third parties.
+    </p>
+
+    <p>
+      Firebase Authentication is provided by Google.
+    </p>
+
+    <p>
+      Google Privacy Policy:
+      <br>
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+
+
+    <!-- 4 -->
+    <h3>4. Google Drive Backup</h3>
+
+    <p>
+      Qarzakanm provides an optional backup and restore feature
+      using Google Drive.
+    </p>
+
+    <p>
+      Backup is not automatic unless you choose to use the backup feature.
+    </p>
+
+    <p>
+      When you choose to create a backup, Qarzakanm reads the local
+      Qarzakanm database containing your App data and uploads the backup
+      to Google's Google Drive application-data storage associated
+      with your Google account.
+    </p>
+
+    <p>
+      The backup file is used to restore your Qarzakanm data when
+      you choose to use the restore feature.
+    </p>
+
+    <p>
+      The App requests access to Google's application-data storage
+      for this purpose. It does not request general access to your
+      personal Google Drive files.
+    </p>
+
+    <p>
+      The backup is stored using Google's application-data storage
+      (<code>appDataFolder</code>).
+    </p>
+
+    <p>
+      Qarzakanm does not use your backup data for advertising,
+      marketing, or selling information.
+    </p>
+
+
+    <!-- 5 -->
+    <h3>5. What Is Included in the Backup</h3>
+
+    <p>
+      The backup contains only the Qarzakanm application database
+      containing the information you have entered into the App.
+    </p>
+
+    <p>
+      This may include:
+    </p>
+
+    <ul>
+      <li>Loan records</li>
+      <li>Debt records</li>
+      <li>Payment records</li>
+      <li>Names</li>
+      <li>Dates</li>
+      <li>Notes</li>
+      <li>Other Qarzakanm loan and debt records entered by you</li>
+    </ul>
+
+    <p>
+      The backup does not contain unrelated personal files from
+      your device or your normal Google Drive files.
+    </p>
+
+    <p>
+      The backup is created only when you choose to use
+      the backup feature.
+    </p>
+
+
+    <!-- 6 -->
+    <h3>6. Restore</h3>
+
+    <p>
+      When you choose to restore your data, Qarzakanm accesses
+      the Qarzakanm backup stored in the Google Drive application-data
+      area associated with your account and downloads it to your device.
+    </p>
+
+    <p>
+      The restored information is written back to the local
+      Qarzakanm database on your device.
+    </p>
+
+
+    <!-- 7 -->
+    <h3>7. Data Storage</h3>
+
+    <p>
+      Qarzakanm primarily operates offline.
+    </p>
+
+    <p>
+      Your App records are stored locally on your Android device.
+    </p>
+
+    <p>
+      When you voluntarily use Google Drive Backup, a copy of your
+      Qarzakanm database is stored through Google's Google Drive
+      application-data storage.
+    </p>
+
+    <p>
+      Qarzakanm does not maintain a separate server database
+      containing your loan records for normal App functionality.
+    </p>
+
+
+    <!-- 8 -->
+    <h3>8. Data Sharing</h3>
+
+    <p>
+      Qarzakanm does not sell, rent, or trade your personal information.
+    </p>
+
+    <p>
+      Information may be processed by Google services when necessary
+      to provide features that you voluntarily use, including:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Google Sign-In</strong> —
+        for Google account authentication.
+      </li>
+
+      <li>
+        <strong>Firebase Authentication</strong> —
+        for authentication and maintaining your signed-in session.
+      </li>
+
+      <li>
+        <strong>Google Drive API</strong> —
+        for creating and restoring your Qarzakanm backup.
+      </li>
+    </ul>
+
+    <p>
+      These services are provided by Google and may process information
+      according to their own terms and privacy policies.
+    </p>
+
+    <p>
+      Google Privacy Policy:
+      <br>
+
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+
+
+    <!-- 9 -->
+    <h3>9. Permissions</h3>
+
+    <p>
+      Qarzakanm does not require access to sensitive device permissions
+      such as:
+    </p>
+
+    <ul>
+      <li>Contacts</li>
+      <li>Location</li>
+      <li>Camera</li>
+      <li>Microphone</li>
+      <li>SMS</li>
+      <li>Phone calls</li>
+      <li>Photos or videos</li>
+    </ul>
+
+    <p>
+      Internet access may be required when you voluntarily use
+      Google Sign-In or Google Drive backup and restore.
+    </p>
+
+
+    <!-- 10 -->
+    <h3>10. Biometric Authentication</h3>
+
+    <p>
+      Qarzakanm may provide an optional biometric security feature
+      to help protect access to the App.
+    </p>
+
+    <p>
+      Biometric authentication is handled by the Android device's
+      biometric authentication system.
+    </p>
+
+    <p>
+      Qarzakanm does not receive or store your fingerprint,
+      face, or other biometric template.
+    </p>
+
+    <p>
+      Biometric data remains under the control of the Android
+      operating system and the device's security hardware/software.
+    </p>
+
+
+    <!-- 11 -->
+    <h3>11. Data Security</h3>
+
+    <p>
+      We take reasonable measures to protect information handled
+      by Qarzakanm.
+    </p>
+
+    <p>
+      Your local App data is protected by the security of
+      your Android device.
+    </p>
+
+    <p>
+      Google account authentication and Google Drive backup are
+      protected by Google's authentication and security systems.
+    </p>
+
+    <p>
+      You are responsible for protecting your Android device
+      and Google account from unauthorized access.
+    </p>
+
+
+    <!-- 12 -->
+    <h3>12. Data Deletion</h3>
+
+    <p>
+      You can delete your locally stored Qarzakanm information
+      using the available deletion features in the App or by removing
+      the App's stored data/uninstalling the App, depending on your
+      device and App functionality.
+    </p>
+
+    <p>
+      If you have created a backup, the backup may remain in Google's
+      application-data storage associated with your Google account.
+    </p>
+
+    <p>
+      Disconnecting or signing out of your Google account does not
+      necessarily delete an existing backup.
+    </p>
+
+    <p>
+      If you want to remove your backup, you should use an available
+      Qarzakanm deletion feature if provided or manage the associated
+      Google application data through Google's available account controls.
+    </p>
+
+
+    <!-- 13 -->
+    <h3>13. Children's Privacy</h3>
+
+    <p>
+      Qarzakanm is a general-purpose personal record-keeping
+      application and is not specifically directed toward children.
+    </p>
+
+    <p>
+      We do not knowingly collect personal information from children.
+    </p>
+
+
+    <!-- 14 -->
+    <h3>14. Third-Party Services</h3>
+
+    <p>
+      Qarzakanm uses Google services for optional account
+      authentication and backup functionality, including:
+    </p>
+
+    <p>
+      <strong>Google Sign-In</strong>
+      <br>
+      Used to allow users to voluntarily connect their Google account.
+    </p>
+
+    <p>
+      <strong>Firebase Authentication</strong>
+      <br>
+      Used to authenticate the Google account and maintain the
+      user's authenticated session.
+    </p>
+
+    <p>
+      <strong>Google Drive API</strong>
+      <br>
+      Used to create and restore Qarzakanm backups in Google's
+      application-data storage.
+    </p>
+
+    <p>
+      Google Privacy Policy:
+      <br>
+
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://policies.google.com/privacy
+      </a>
+    </p>
+
+
+    <!-- 15 -->
+    <h3>15. Changes to This Privacy Policy</h3>
+
+    <p>
+      We may update this Privacy Policy from time to time to reflect
+      changes to Qarzakanm or its services.
+    </p>
+
+    <p>
+      Any changes will be published on this page with a revised
+      "Last Updated" date.
+    </p>
+
+    <p>
+      We encourage you to review this Privacy Policy periodically.
+    </p>
+
+
+    <!-- 16 -->
+    <h3>16. Contact Us</h3>
+
+    <p>
+      If you have any questions, concerns, or suggestions regarding
+      this Privacy Policy or Qarzakanm, please contact us:
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:qarzakanm@gmail.com">
+        qarzakanm@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      +964 778 196 0559
+    </p>
+
+    <p>
+      <strong>Website:</strong>
+      <a
+        href="https://qarzakanm.github.io/"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://qarzakanm.github.io/
+      </a>
+    </p>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 Qarzakanm. All rights reserved. |
+      <a href="#download">Download App</a> |
+      <a href="#privacy-policy">Privacy Policy</a>
+    </p>
+  </footer>
+
 </body>
 </html>
+```
