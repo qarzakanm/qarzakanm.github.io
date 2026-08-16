@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Delete Qarzakanm Account</title>
+
+  <title>Delete Qarzakanm Account & Data</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,7 +30,7 @@
     main {
       max-width: 800px;
       margin: 40px auto;
-      padding: 20px;
+      padding: 30px;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -36,15 +38,17 @@
 
     h2 {
       color: #535CFD;
+      margin-top: 30px;
     }
 
     p {
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
+    ul,
     ol {
       margin-left: 20px;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
     a {
@@ -56,6 +60,22 @@
       text-decoration: underline;
     }
 
+    .notice {
+      background: #f1f3ff;
+      border-left: 4px solid #535CFD;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    .warning {
+      background: #fff4e5;
+      border-left: 4px solid #f39c12;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
     footer {
       text-align: center;
       margin: 40px 0;
@@ -64,36 +84,198 @@
     }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Delete Qarzakanm Account & Data</h1>
   </header>
 
   <main>
-    <p>If you created an account in the <strong>Qarzakanm</strong> app, you can request deletion of your account and associated data.</p>
 
-    <h2>Steps to request deletion:</h2>
+    <p>
+      If you have connected a Google account to the
+      <strong>Qarzakanm (قەرزەکانم)</strong> application,
+      you can request deletion of your account and associated
+      data by following the instructions below.
+    </p>
+
+
+    <h2>How to Request Account Deletion</h2>
+
     <ol>
-      <li>Send an email to <a href="mailto:qarzakanm@gmail.com">qarzakanm@gmail.com</a> using the same email address you used to sign up.</li>
-      <li>In the subject line, write: <strong>Delete My Qarzakanm Account</strong>.</li>
+      <li>
+        Send an email to
+        <a href="mailto:qarzakanm@gmail.com">
+          qarzakanm@gmail.com
+        </a>
+        using the same email address associated with your
+        Qarzakanm Google account.
+      </li>
+
+      <li>
+        Use the following subject:
+        <strong>Delete My Qarzakanm Account</strong>
+      </li>
+
+      <li>
+        In the email, clearly state that you want to delete
+        your Qarzakanm account and associated data.
+      </li>
     </ol>
 
-    <h2>What will be deleted:</h2>
+
+    <div class="notice">
+      <strong>Important:</strong>
+      Qarzakanm does not require an account to use the main
+      loan and debt notebook features. A Google account is
+      only connected when you voluntarily use Google Sign-In
+      and is used for authentication and optional backup
+      and restore functionality.
+    </div>
+
+
+    <h2>What Data Will Be Deleted?</h2>
+
+    <p>
+      When your account deletion request is processed,
+      we will delete the account-related information that
+      Qarzakanm maintains through Firebase Authentication,
+      including:
+    </p>
+
     <ul>
-      <li>Email address</li>
-      <li>Name</li>
-      <li>Phone number</li>
-      <li>Account-related data stored in Firebase</li>
+      <li>Google/Firebase account identifier</li>
+      <li>Email address associated with the account</li>
+      <li>Display name, if available</li>
+      <li>Other authentication-related information associated with the Qarzakanm account</li>
     </ul>
 
-    <h2>Data retention notice:</h2>
-    <p>Once deleted, your account data cannot be restored.</p>
-    <p>Locally stored debts/financial records on your device are not uploaded to our servers and will remain on your device until you uninstall the app.</p>
 
- </main>
+    <h2>Google Drive Backup Data</h2>
+
+    <p>
+      If you have used the Qarzakanm Google Drive Backup feature,
+      your Qarzakanm backup may be stored in Google's
+      application-data storage associated with your Google account.
+    </p>
+
+    <p>
+      The backup may contain information that you entered into
+      Qarzakanm, including:
+    </p>
+
+    <ul>
+      <li>Loan records</li>
+      <li>Debt records</li>
+      <li>Payment records</li>
+      <li>Names</li>
+      <li>Dates</li>
+      <li>Notes</li>
+      <li>Other Qarzakanm records stored in the application database</li>
+    </ul>
+
+    <p>
+      As part of an account deletion request, we will take
+      reasonable steps to delete Qarzakanm backup data associated
+      with the account where it is under our control.
+    </p>
+
+
+    <h2>Local Data on Your Device</h2>
+
+    <p>
+      Qarzakanm primarily operates offline. Your loan and debt
+      records are normally stored locally on your Android device.
+    </p>
+
+    <p>
+      Qarzakanm does not maintain a separate server database
+      containing your local loan records for normal App functionality.
+    </p>
+
+    <div class="warning">
+      <strong>Important:</strong>
+      Deleting your Qarzakanm account does not automatically
+      delete data that is stored only on your device.
+      You should delete your local Qarzakanm records using
+      the available deletion options in the App or clear the
+      App's data/uninstall the App if you want to remove
+      locally stored information.
+    </div>
+
+
+    <h2>What Will Not Be Deleted?</h2>
+
+    <p>
+      Qarzakanm does not control your general Google account,
+      Google Drive files outside of the Qarzakanm application-data
+      area, or other information maintained by Google.
+    </p>
+
+    <p>
+      Deleting your Qarzakanm account does not delete your
+      entire Google account or your other Google Drive files.
+    </p>
+
+
+    <h2>Processing Time</h2>
+
+    <p>
+      We will review account deletion requests and process
+      eligible requests within a reasonable period.
+    </p>
+
+    <p>
+      Once account-related data has been deleted, it may not
+      be possible to restore it.
+    </p>
+
+
+    <h2>Need Help?</h2>
+
+    <p>
+      If you have questions about account deletion or your
+      Qarzakanm data, contact us:
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:qarzakanm@gmail.com">
+        qarzakanm@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Website:</strong>
+      <a
+        href="https://qarzakanm.github.io/"
+        target="_blank"
+        rel="noopener noreferrer">
+        https://qarzakanm.github.io/
+      </a>
+    </p>
+
+
+    <h2>Privacy Policy</h2>
+
+    <p>
+      For more information about how Qarzakanm handles your
+      information, please read our
+      <a
+        href="https://qarzakanm.github.io/#privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>.
+    </p>
+
+  </main>
+
 
   <footer>
-    &copy; 2025 Qarzakanm
+    &copy; 2026 Qarzakanm. All rights reserved.
   </footer>
+
 </body>
 </html>
